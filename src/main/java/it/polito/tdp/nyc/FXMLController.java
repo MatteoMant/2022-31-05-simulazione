@@ -117,7 +117,7 @@ public class FXMLController {
     	// qui possiamo far partire la simulazione
     	Map<Tecnico, Integer> tecnicoHotspot = this.model.simula(n, provider, quartiere);
     	int durataSimulazione = this.model.getDurataTotSimulazione();
-    	txtResult.appendText("La simulazione è durata " + durataSimulazione + " minuti\n");
+    	txtResult.setText("La simulazione è durata " + durataSimulazione + " minuti\n");
     	for (Tecnico t : tecnicoHotspot.keySet()) {
     		txtResult.appendText(t.getIdTecnico() + " - " + tecnicoHotspot.get(t) + "\n");
     	}
